@@ -1,10 +1,11 @@
 ---
 title: docker 安装 mysql
 date: 2017-12-25 15:27:15
-tags:
-  - docker
 categories:
   - docker
+tags:
+  - docker
+  - mysql
 ---
 
 docker  安装 mysql 教程
