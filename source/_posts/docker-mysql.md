@@ -34,7 +34,7 @@ mysql installation on docker container
   `-v` $HOME/docker/mysql/data:/var/lib/mysql，映射mysql data目录
   `-v` $HOME/docker/mysql/conf:/etc/mysql/conf.d，映射mysql config目录
   `-e` 指定初始化root密码
-  `-d` 指定mysql版本
+  `-d` 后台启动
 
 3. 启动/停止mysql
 
@@ -45,3 +45,4 @@ mysql installation on docker container
    # 启动 mysql
    docker start mysql
    ```
+
