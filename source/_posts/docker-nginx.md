@@ -12,7 +12,7 @@ nginx installation on docker container
 
 <!-- more -->
 
-1. 拉取mysql image
+1. 拉取nginx image
 
    ```bash
    docker pull nginx:latest
@@ -39,20 +39,21 @@ nginx installation on docker container
    > conf demo
    >
    > 在 $HOME/docker/nginx/conf.d:/etc/nginx/conf.d 新建以`.conf`结尾的配置文件，例如：test.conf
-   >
-   > ```
-   > server {
-   >     listen       80;
-   >     server_name www.test.com;
-   >     location / {
-   >        proxy_pass http://test_server;
-   >    }
-   > }
-   > upstream test_server {
-   > 	# 宿主机ip:port
-   >     server 192.168.2.42:6767;
-   > }
-   > ```
+
+   ```shell
+   server {
+       listen       80;
+       server_name www.test.com;
+       location / {
+           proxy_pass http://test_server;
+       }
+    }
+    upstream test_server {
+        # 宿主机ip:port
+        server 192.168.2.42:6767;
+    }
+   ```
+
 
 3. 启动/停止nginx
 
