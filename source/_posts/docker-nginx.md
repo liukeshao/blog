@@ -18,7 +18,7 @@ nginx installation on docker container
    docker pull nginx:latest
    ```
 
-2. 运行mysql
+2. 运行nginx
 
    ```bash
    docker run --name nginx \
